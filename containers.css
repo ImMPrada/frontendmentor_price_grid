@@ -1,4 +1,5 @@
 body {
+  --radius-border: 8px;
   box-sizing: border-box;
   background-color: #E6EFF5;
   height: 100vh;
@@ -10,15 +11,15 @@ body {
   box-sizing: border-box;
   max-width: 635px;
   height: 475px;
-  border-radius: 8px;
+  border-radius: var(--radius-border);
   margin: auto auto;
-  padding: 40px;
   
   background-color: white;
 }
 
 .container-message {
   box-sizing: border-box;
+  padding: 40px;
   height: 50%;
 }
 
@@ -33,11 +34,15 @@ body {
 .container-suscription-info-price {
   box-sizing: border-box;
   width: 50%;
-  padding: 40px 40px 0 0;
+  padding: 40px;
+  background-color: #2AB3B1;
+  border-bottom-left-radius: var(--radius-border);
 }
 
 .container-suscription-info-whyus {
   box-sizing: border-box;
   width: 50%;
-  padding: 40px 0 0 40px;
+  padding: 40px;
+  background-color: #4BBFBD;
+  border-bottom-right-radius: var(--radius-border);
 }
