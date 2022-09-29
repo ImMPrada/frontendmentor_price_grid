@@ -1,3 +1,6 @@
 body {
   background-color: #E6EFF5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
