@@ -9,7 +9,29 @@ body {
   max-width: 635px;
   height: 475px;
   border-radius: 8px;
-  margin: auto auto;
+  margin: 0 auto;
+  padding: 40px;
 
   background-color: white;
+}
+
+.container-message {
+  height: 50%;
+}
+
+.container-suscription-info {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-suscription-info-price {
+  width: 50%;
+  padding: 40px 40px 0 0;
+}
+
+.container-suscription-info-whyus {
+  width: 50%;
+  padding: 40px 0 0 40px;
 }
