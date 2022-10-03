@@ -1,0 +1,76 @@
+body {
+  --radius-border: 8px;
+  box-sizing: border-box;
+  background-color: #E6EFF5;
+  height: 100vh;
+  display: flex;
+  padding: 72px 32px 62px;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 635px;
+  height: 475px;
+  border-radius: var(--radius-border);
+  margin: auto auto;
+  
+  background-color: white;
+}
+
+.container-message {
+  box-sizing: border-box;
+  padding: 40px;
+  height: 50%;
+}
+
+.container-suscription-info {
+  box-sizing: border-box;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-suscription-info-price {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 40px;
+  background-color: #2AB3B1;
+  border-bottom-left-radius: var(--radius-border);
+}
+
+.container-suscription-info-whyus {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 40px;
+  background-color: #4BBFBD;
+  border-bottom-right-radius: var(--radius-border);
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .container-suscription-info {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container-suscription-info-price, .container-suscription-info-whyus {
+    width: 100%;
+    border-radius: 0;
+  }
+}
